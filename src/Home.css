@@ -1,0 +1,84 @@
+.news-articles {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next row */
+  gap: 20px; /* Ensures proper spacing between articles */
+  justify-content: flex-start; /* Aligns items to the start of the row */
+  margin: 20px 10px;
+}
+
+.news-article {
+  background-image: url("../public/white.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 1 1 calc(33.33% - 20px); /* Ensures 3 articles fit per row with gaps */
+  max-width: calc(33.33% - 20px); /* Prevents items from growing too large */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.news-article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.news-article h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: rgb(0, 0, 0);
+}
+
+.news-article p {
+  flex-grow: 1;
+  margin: 15px 0;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.news-article button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.news-article button:hover {
+  background-color: #0056b3;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+/* Styles for the image */
+.article-image {
+  width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px; /* Matches the border radius of the article */
+  margin-bottom: 10px; /* Adds space below the image */
+}
+
+@media (max-width: 768px) {
+  .news-article {
+      flex: 1 1 calc(50% - 20px); /* 2 articles per row on medium screens */
+      max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .news-article {
+      flex: 1 1 100%; /* 1 article per row on small screens */
+      max-width: 100%;
+  }
+}

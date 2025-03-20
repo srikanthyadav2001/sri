@@ -1,0 +1,53 @@
+/* Login.css */
+
+.login-container {
+    max-width: 400px; /* Maximum width of the form */
+    margin: 50px auto; /* Center the form horizontally and add top margin */
+    padding: 20px; /* Padding inside the form */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .login-container h2 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Darker text color */
+  }
+  
+  .login-container input {
+    width: 100%; /* Full width of the input fields */
+    padding: 10px; /* Padding inside the input fields */
+    margin: 10px 0; /* Margin above and below the input fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners for input fields */
+    font-size: 1rem; /* Font size for input text */
+  }
+  
+  .login-container button {
+    width: 100%; /* Full width of the button */
+    padding: 10px; /* Padding inside the button */
+    margin-top: 10px; /* Margin above the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for button */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text color */
+    font-size: 1rem; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+  }
+  
+  .login-container button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .login-container p {
+    text-align: center; /* Center the paragraph text */
+    color: #666; /* Gray text color */
+  }
+  
+  .login-container .error {
+    color: red; /* Red color for error messages */
+    text-align: center; /* Center the error message */
+    margin: 10px 0; /* Margin above and below the error message */
+  }
